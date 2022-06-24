@@ -1,9 +1,6 @@
 body {
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
     margin: 0;
 }
 body ::before{
@@ -20,11 +17,6 @@ body ::before{
     background-repeat: no-repeat;
     background-position: center;
 }
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 h1{
     text-align: center;
 }
@@ -36,6 +28,7 @@ form {
     margin: 3% 15% 0;
     padding: 2% 3% 4%;
     font-size: 20px;
+    z-index: 1;
 }
 label {
     display: block;
@@ -46,22 +39,7 @@ input {
 #name, #email, #number, #dropdown, #dropdown-one, textarea {
     display: block;
     width: 100%;
-    color: #495057;
     background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-#name,
-#email,
-#number,
-#dropdown,
-#dropdown-one,
-textarea:focus {
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 #name,
 #email,
